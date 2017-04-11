@@ -8,7 +8,7 @@ import java.util.Random;
 public class BaseActivity extends AppCompatActivity {
 
     protected static final String KEY_OTP = "KEY_OTP";
-    protected static final String API_KEY = "576329a264a9d1fb576329a264a9d1fb";
+    protected static final String API_KEY = "39643166cafe264ab576329aeefa9d1f";
     private static final String HEX_CHARS = "0123456789abcdef";
     private Random random = new Random();
 
@@ -18,8 +18,8 @@ public class BaseActivity extends AppCompatActivity {
 
     protected void getHostInfo() {
         // GET Host Information by e.g. scanning QR Code
-        licenseKey = getRandomHexString(20, false);
-        hostId = getRandomHexString(12, true);
+        licenseKey = "LICENSE_KEY"; //getRandomHexString(20, false);
+        hostId = "112233DDEEFF"; //getRandomHexString(12, true);
         // GET License Count from e.g. CRM system
         licenseCount = 12;
     }
